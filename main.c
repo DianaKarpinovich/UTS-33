@@ -3,7 +3,7 @@
 
 int main() {
     float a, b, c;
-    float discriminant, x1, x2;
+    float discriminant(0.0), x1(0.0), x2(0.0);
 
     // Ввод коэффициентов
     printf("Введите коэффициенты a, b, c для квадратного уравнения ax^2 + bx + c = 0\n");
