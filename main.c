@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-    float a, b, c;
+    float a(0.0), b(0.0), c(0.0);
     float discriminant(0.0), x1(0.0), x2(0.0);
 
     // Ввод коэффициентов
