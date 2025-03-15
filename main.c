@@ -15,7 +15,7 @@ int main() {
     scanf("%f", &c);
 
     // Проверка, чтобы a не было равно 0
-    if (a == 0) {
+    if (a == 0.0) {
         printf("Это не квадратное уравнение.\n");
         return 1;
     }
@@ -23,14 +23,14 @@ int main() {
     // Вычисление дискриминанта
     discriminant = b * b - 4.0 * a * c;
 
-    if (discriminant > 0) {
+    if (discriminant > 0.0) {
         // Два действительных корня
-        x1 = (-b + sqrt(discriminant)) / (2 * a);
-        x2 = (-b - sqrt(discriminant)) / (2 * a);
+        x1 = (-b + sqrt(discriminant)) / (2.0 * a);
+        x2 = (-b - sqrt(discriminant)) / (2.0 * a);
         printf("Корни уравнения: x1 = %.2f, x2 = %.2f\n", x1, x2);
-    } else if (discriminant == 0) {
+    } else if (discriminant == 0.0) {
         // Один корень
-        x1 = -b / (2 * a);
+        x1 = -b / (2.0 * a);
         printf("Один корень: x = %.2f\n", x1);
     } else {
         // Нет действительных корней
