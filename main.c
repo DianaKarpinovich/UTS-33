@@ -21,7 +21,7 @@ int main() {
     }
 
     // Вычисление дискриминанта
-    discriminant = b * b - 4 * a * c;
+    discriminant = b * b - 4.0 * a * c;
 
     if (discriminant > 0) {
         // Два действительных корня
