@@ -1,12 +1,14 @@
 import math
 
 def solve_quadratic(a, b, c):
+    # Проверяем, является ли уравнение квадратным (коэффициент a не должен быть равен 0)
     if a == 0:
         print("Ошибка: это не квадратное уравнение.")
         return None
-
+    
+    # Вычисляем дискриминант по формуле D = b² - 4ac
     discriminant = b ** 2 - 4 * a * c
-
+    
     if discriminant > 0:
         x1 = (-b + math.sqrt(discriminant)) / (2 * a)
         x2 = (-b - math.sqrt(discriminant)) / (2 * a)
@@ -21,9 +23,9 @@ if __name__ == "__main__":
     a = float(input("Введите a: "))
     b = float(input("Введите b: "))
     c = float(input("Введите c: "))
-
+    
     result = solve_quadratic(a, b, c)
-
+    
     if result is None:
         print("Нет действительных корней.")
     elif len(result) == 1:
